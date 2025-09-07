@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Lab: Event Listeners With JavaScript</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>Lab: Event Listeners With JavaScript</h1>
-  <button id="changeColorButton">Change Background Color</button>
-  <button id="resetColorButton">Reset Background Color</button>
-  <p id="keyPressDisplay">Press any key...</p>
-  <input type="text" id="textInput" placeholder="Type something...">
-  <p id="textInputDisplay">Your input will be displayed here.</p>
+
+  <button id="changeColorButton" type="button">Change Background Color</button>
+  <button id="resetColorButton" type="button" title="Double-click to reset">
+    Reset Background Color
+  </button>
+
+  <p id="keyPressDisplay" aria-live="polite">Press any key...</p>
+
+  <input
+    type="text"
+    id="textInput"
+    placeholder="Type something..."
+    aria-describedby="textInputDisplay"
+    autocomplete="off"
+  />
+  <p id="textInputDisplay" aria-live="polite">
+    Your input will be displayed here.
+  </p>
+
   <script src="index.js"></script>
 </body>
-</html>
+</html> 
